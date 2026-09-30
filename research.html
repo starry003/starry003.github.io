@@ -64,6 +64,7 @@
         }
 
         h1 {
+            color: #171717;
             font-size: clamp(60px, 9vw, 110px);
             line-height: 0.95;
             letter-spacing: -5px;
@@ -96,7 +97,153 @@
         }
 
         .skill {
-            background: white;
+            background: #ffffff;
+            color: #171717;
             border: 1px solid #e5e5e5;
-            b
+            border-radius: 18px;
+            padding: 30px;
+        }
+
+        .skill h2 {
+            color: #171717;
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .skill p {
+            color: #777;
+        }
+
+        .skill a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #171717;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .skill a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            padding: 50px 0;
+            color: #888;
+            font-size: 13px;
+        }
+
+        @media (max-width: 700px) {
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                letter-spacing: -3px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav>
+            <a class="logo" href="index.html">
+                Starry
+            </a>
+
+            <a href="index.html">
+                ← Back Home
+            </a>
+        </nav>
+
+
+        <main>
+
+            <div class="hero">
+
+                <div class="eyebrow">
+                    AI SKILLS / 01
+                </div>
+
+                <h1>
+                    Research.
+                </h1>
+
+                <p class="intro">
+                    Exploring tools and workflows for finding,
+                    understanding and organizing information with AI.
+                </p>
+
+            </div>
+
+
+            <section>
+
+                <div class="section-title">
+                    What I explore
+                </div>
+
+                <div class="skills">
+
+                    <div class="skill">
+                        <h2>Web Research</h2>
+
+                        <p>
+                            Finding useful information across
+                            websites and online sources.
+                        </p>
+                    </div>
+
+
+                    <div class="skill">
+                        <h2>Information Discovery</h2>
+
+                        <p>
+                            Exploring unfamiliar topics and
+                            discovering relevant resources.
+                        </p>
+                    </div>
+
+
+                    <div class="skill">
+                        <h2>Knowledge Synthesis</h2>
+
+                        <p>
+                            Turning scattered information into
+                            structured knowledge.
+                        </p>
+                    </div>
+
+
+                    <div class="skill">
+                        <h2>AI Research Workflows</h2>
+
+                        <p>
+                            Experimenting with AI-assisted
+                            research and analysis workflows.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+
+        <footer>
+            © 2026 Starry
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
 ```
+
