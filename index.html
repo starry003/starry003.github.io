@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Starry — AI & Skills</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         "Helvetica Neue", Arial, sans-serif;
+            background: #f7f7f5;
+            color: #171717;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: min(1100px, 90%);
+            margin: 0 auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 28px 0;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        nav a {
+            color: #555;
+            text-decoration: none;
+            margin-left: 28px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px 0;
+        }
+
+        .eyebrow {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: clamp(52px, 8vw, 96px);
+            line-height: 0.95;
+            letter-spacing: -5px;
+            max-width: 900px;
+            margin-bottom: 32px;
+        }
+
+        .intro {
+            max-width: 600px;
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 22px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-size: 14px;
+            border: 1px solid #222;
+        }
+
+        .button.primary {
+            background: #171717;
+            color: white;
+        }
+
+        .button.secondary {
+            color: #171717;
+        }
+
+        section {
+            padding: 100px 0;
+            border-top: 1px solid #ddd;
+        }
+
+        .section-title {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .skill {
+            background: white;
+            padding: 30px;
+            border: 1px solid #e5e5e5;
+            border-radius: 18px;
+        }
+
+        .skill h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .skill p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        footer {
+            padding: 40px 0;
+            color: #888;
+            font-size: 13px;
+        }
+
+        @media (max-width: 700px) {
+            h1 {
+                letter-spacing: -3px;
+            }
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                margin-left: 14px;
+            }
+
+            .hero {
+                min-height: 65vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav>
+            <div class="logo">Starry</div>
+
+            <div>
+                <a href="#skills">Skills</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+            </div>
+        </nav>
+
+
+        <main>
+
+            <section class="hero" style="border-top: none;">
+
+                <div class="eyebrow">
+                    AI · SKILLS · EXPERIMENTS
+                </div>
+
+                <h1>
+                    Exploring<br>
+                    AI possibilities.
+                </h1>
+
+                <p class="intro">
+                    Building useful workflows, exploring AI Skills,
+                    and turning ideas into practical projects.
+                </p>
+
+                <div class="buttons">
+                    <a class="button primary" href="#skills">
+                        Explore Skills
+                    </a>
+
+                    <a class="button secondary" href="#projects">
+                        View Projects
+                    </a>
+                </div>
+
+            </section>
+
+
+            <section id="skills">
+
+                <div class="section-title">
+                    AI Skills
+                </div>
+
+                <div class="skills">
+
+                    <div class="skill">
+                        <h3>Research</h3>
+                        <p>
+                            Web research, information discovery
+                            and knowledge synthesis.
+                        </p>
+                    </div>
+
+                    <div class="skill">
+                        <h3>Documents</h3>
+                        <p>
+                            PDF, Markdown, documents and
+                            structured information.
+                        </p>
+                    </div>
+
+                    <div class="skill">
+                        <h3>Automation</h3>
+                        <p>
+                            Exploring AI workflows and
+                            practical automation.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section id="about">
+
+                <div class="section-title">
+                    About
+                </div>
+
+                <p class="intro">
+                    I'm exploring how AI can become a practical
+                    part of everyday work, learning and creativity.
+                </p>
+
+            </section>
+
+
+            <section id="projects">
+
+                <div class="section-title">
+                    Projects
+                </div>
+
+                <div class="skills">
+
+                    <div class="skill">
+                        <h3>AI Skill Library</h3>
+                        <p>
+                            Building a personal collection of
+                            useful AI Skills and workflows.
+                        </p>
+                    </div>
+
+                    <div class="skill">
+                        <h3>Personal Website</h3>
+                        <p>
+                            This website — built while learning
+                            GitHub and AI tools.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <footer>
+            © 2026 Starry · Built with GitHub Pages
+        </footer>
+
+    </div>
+
+</body>
+</html>
